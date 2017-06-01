@@ -1,6 +1,8 @@
 /** {
   border: 1px dashed red;
 }*/
+
+/* xs */
 #nav-logo {
   height: 100%;
   padding: 0px;
@@ -19,26 +21,35 @@
 }
 
 .content-img {
-  float: left;
+  /*float: left;*/
   width: 100%;
   margin-bottom: 10px;
 }
 
+/* sm */
 @media screen and (min-width:768px) {
   body {
     background-color: lightgrey;
   }
+
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: orange;
+  }
+
   .content-text {
-    float: right;
-    width: 50%;
-    padding: 0px 20px;
+    float: none;
+    padding: 0;
   }
-  .content-img {
-    float: left;
-    width: 50%;
+
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: red;
   }
-  .content {
-    /*border: 1px solid blue;*/
-    overflow: auto;
-  }
+
 }
