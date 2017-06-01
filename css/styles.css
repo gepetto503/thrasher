@@ -2,7 +2,15 @@
   border: 1px dashed red;
 }*/
 
-/* xs */
+body {
+  background-color: lightgrey;
+}
+
+.content {
+
+  overflow: auto;
+}
+
 #nav-logo {
   height: 100%;
   padding: 0px;
@@ -26,30 +34,16 @@
   margin-bottom: 10px;
 }
 
-/* sm */
 @media screen and (min-width:768px) {
-  body {
-    background-color: lightgrey;
-  }
-
-}
-
-/* md */
-@media screen and (min-width: 992px) {
-  body {
-    background-color: orange;
-  }
-
-  .content-text {
+  .navbar .navbar-nav {
+    display: inline-block;
     float: none;
-    padding: 0;
+    vertical-align: top;
   }
-
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    background-color: red;
+  .navbar .navbar-collapse {
+    text-align: center;
   }
-
+  #nav-logo {
+    text-align: center;
+  }
 }
